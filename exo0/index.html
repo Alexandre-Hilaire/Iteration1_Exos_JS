@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+
+        <h1>Exercice 0</h1>
+
+        <script type="text/javascript"> //déclare que ce block est un script en language JavaScript
+
+        /* Section 1 */   
+
+        var name = "Joe"; //J'initialise une variable avec pour valeur une chaine de caracrètes
+        var city = 'London'; // idem pour la ville
+        var age = 32; // Une variable qui contient un int
+        var isRed = true; // Une variable qui contient un bouléen
+        var isOld = age > 80; // Un variable qui contient une condition
+
+        var previousJobs = ['lawyer', 'developper', 'Professionnal climber']; //Un tableau de chaîne de caractères
+
+        function info(height, weight) { //Création d'une fonction qui à deux paramètres, la hauteur et la largeur 
+            if (height > 180) { //Structure conditionnelle SI heigh supérieure à 180
+                console.log('Vous êtes grand'); //Affiche le texte dans la console
+            }
+            if (weight < 0) {//Structure conditionnelle SI weight supérieure à 180
+                console.log('oups, there is a problem'); // Affiche ce texte dans la console
+            } else if ( weight < 15) { //Sinon SI weight inférieure à 15
+                console.log('Are you that slim ?') // Affiche ce texte dans la console
+            } else { //Sinon
+                console.log('Good !') // Affiche ce texte dans la console
+            }
+        } //Fin de la fonction
+
+        info(165, 45);//Appelle la fonction et lui donne en paramètres deux entiers et affiche le résultat
+
+        var myHeight = 175; //Création d'une variable myHeight et initialisation avec un entier 175
+        var myWeight = 86; //Création d'une variable myWeight et initialisation avec un entier 86
+
+        info(myHeight, myWeight); // 
+
+        info(myHeight + 15, myWeight - 100); // Appelle la fonction et lui donne les deux variable qui contiennent des entiers en paramètres en ajoutant 15 à MyHeight et soutrayant 100 à MyWeight et affiche le résultat
+
+        function toUpper(variable) { //Création d'une fonction avec une variable pour paramètre
+            return variable.toUpperCase(); // Retourne la valeur de la chaîne de caractère convertie en majuscules
+        }
+
+        var upperName = toUpper(name); //Convertie la chaîne de caractère de la variable nom 
+
+        for (i = 0; i < 3; i = i + 1) { //boucle for pour parcourir le tableau jusqu'au 3 ème index dans ce cas là il y a une erreur puisque que le tableau s'arrête à 2 (0,1,2) donc le 3 est indéfini
+            console.log(previousJobs[i]); // Affiche la valeur de l'indice du tableau qui correspond à i dans la console tant que i < 3 
+        }
+
+        /* Section 2: */
+
+        // afficher la ville dans laquele Joe vit.  
+        info(city);   
+
+        // afficher si Joe est roux ou pas.
+        function joe_red (isRed) {
+            if (isRed == true) {
+                console.log("Joe est roux");
+            }
+            else {
+                console.log("Joe n'est pas roux");
+            }
+        }
+        joe_red(isRed);
+        /* Section 3 */
+
+        console.log(myVariable);
+
+        </script>
+
+    </body>
+</html>
