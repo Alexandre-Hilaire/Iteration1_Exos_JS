@@ -1,7 +1,7 @@
 // you can write js here
 console.log('exo-2');
 
-let isTesting  = true;
+let isTesting  = false;
 
     const myDate = new Date(Date.now()); // myDate est la date d'aujourd'hui
 
