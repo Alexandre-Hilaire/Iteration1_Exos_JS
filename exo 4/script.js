@@ -6,7 +6,7 @@ var secretMessage = ["Learning", "isn't", "about", "what", "you", "get", "easily
 
 console.log(secretMessage);
 
-let delete_end_element = secretMessage.pop(); //créer une variable qui retire le dernier élément du tableau
+secretMessage.pop(); //retire le dernier élément du tableau
 
 console.log(secretMessage);
 
